@@ -9,11 +9,12 @@
 
         <title>CRUD Operations</title>
 
-        <!-- Fonts -->
+        <!-- Fonts --> 
         <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css">
     </head>
     <body>
         <br><br>
         @yield('content')
+
     </body>
 </html>
