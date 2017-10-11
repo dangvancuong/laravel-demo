@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-    shopping cart
+    Sản Phẩm Cao Cấp
 @endsection
 @section('styles')
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
@@ -14,8 +14,8 @@
                         <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/quizzes/fast_food_smarts_rmq/650x350_fast_food_smarts_rmq.jpg" alt="...">
                         <div class="caption">
                             <h3>Thumbnail label</h3>
-                            <p>...</p>
-                            <p>...</p>
+                            <p><strong>Giá: </strong><em> 200$</em></p>
+                            <p>đánh giá: tốt</p>
                             <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
                         </div>
                     </div>
@@ -74,7 +74,7 @@
                             <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
     </div>
