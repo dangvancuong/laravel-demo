@@ -1,4 +1,10 @@
-body{
-  background: #ccc;
-
+#product{
+  background-color: #fff;
+  .thumbnail{
+    img{
+      border: none;
+      width:100%;
+      height: 200px;
+    }
+  }
 }
