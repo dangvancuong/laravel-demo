@@ -8,20 +8,23 @@
 @section('content')
     <div id="product">
         <div class="container">
+            @foreach($products->chunk(3) as $product)
             <div class="row">
+                @foreach($product as $pro)
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                        <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/quizzes/fast_food_smarts_rmq/650x350_fast_food_smarts_rmq.jpg" alt="...">
+                        <img src="{{$pro->imgPath}}" alt="...">
                         <div class="caption clearfix">
-                            <h3>Thumbnail label</h3>
-                            <p><strong>Giá: </strong><em> 200$</em></p>
-                            <p>đánh giá: tốt</p>
-                            <div class="pull-left price"><strong>price : </strong> $200</div>
+                            <h3>{{$pro->title}}</h3>
+                            <p><strong>Giá: </strong><em> {{$pro->description}}</em></p>
+                            <div class="pull-left price"><strong>price : </strong> {{$pro->price}}$</div>
                             <p><a href="#" class="btn btn-success pull-right" role="button">add cart</a>
                         </div>
                     </div>
                 </div>
+                @endforeach
             </div>
+            @endforeach
         </div>
     </div>
 

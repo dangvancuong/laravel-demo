@@ -11,9 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('shop.index');
-});
+Route::get('/shop',[
+    'uses' =>'cart\ProductController@index',
+    'as' =>'shop.index'
+]);
 Route::resource('crud', 'CRUDController');
 
 Auth::routes();
