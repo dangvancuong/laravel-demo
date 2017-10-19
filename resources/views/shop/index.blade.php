@@ -13,7 +13,7 @@
                 @foreach($product as $pro)
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                        <img src="{{$pro->imgPath}}" alt="...">
+                        <img src="{{$pro->imgPath}}" alt="ảnh thức ăn">
                         <div class="caption clearfix">
                             <h3>{{$pro->title}}</h3>
                             <p><strong>Giá: </strong><em> {{$pro->description}}</em></p>
