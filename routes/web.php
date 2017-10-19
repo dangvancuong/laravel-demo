@@ -14,11 +14,22 @@ Route::get('/',function (){
     return view('welcome');
 });
 
+Route::get('auth/facebook', 'Auth\LoginController@redirectToProvider');
+Route::get('auth/facebook/callback', 'Auth\LoginController@handleProviderCallback');
+
 Route::get('/shop',[
     'uses' =>'cart\ProductController@index',
     'as' =>'shop.index'
 ]);
 Route::resource('crud', 'CRUDController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
